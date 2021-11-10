@@ -1,6 +1,6 @@
 {
   "name": "euf-grinder",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Minimal Canvas Gamelibrary",
   "main": "index.js",
   "type": "module",
