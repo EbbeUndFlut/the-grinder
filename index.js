@@ -5,12 +5,14 @@ import CanvasRenderer from "./renderer/CanvasRenderer.js"
 import Text from "./Text.js"
 import Texture from "./Texture.js"
 import Sprite from "./Sprite.js"
+import Game from "./Game.js"
 export default {
-	MouseControls,
-	KeyControls,
-	Container,
-	CanvasRenderer,
-	Text,
-	Texture,
-	Sprite,
+    MouseControls,
+    KeyControls,
+    Container,
+    CanvasRenderer,
+    Text,
+    Texture,
+    Sprite,
+    Game,
 }
