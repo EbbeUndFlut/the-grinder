@@ -36,10 +36,11 @@ game.run = function () {
             if (entity.log) {
                 entity.log()
             }
-            if (entity.Sprite) {
-                renderer.render(entity)
+            if (entity.update) {
+                entity.update()
             }
         })
+        renderer.render(entities)
     }
     requestAnimationFrame(loop)
 }

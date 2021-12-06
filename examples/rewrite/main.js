@@ -4,6 +4,10 @@ let { game } = grinder
 
 let player = {}
 player.Position = { x: 300, y: 60 }
+player.update = () => {
+    console.log("object")
+    player.Position.x += 0.5
+}
 
 let playerSprite = ressourceLoader.addTexture("./assets/robot.png")
 player.Sprite = ressourceLoader.getTexture(playerSprite)
