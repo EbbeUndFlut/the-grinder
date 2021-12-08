@@ -10,10 +10,11 @@ player.update = () => {
 }
 
 let playerSprite = ressourceLoader.addTexture("./assets/robot.png")
+let antiSprite = ressourceLoader.addTexture("./assets/head.png")
 player.Sprite = ressourceLoader.getTexture(playerSprite)
 
 let enemy = {}
 enemy.Position = { x: 500, y: 450 }
-enemy.Sprite = ressourceLoader.getTexture(playerSprite)
+enemy.Sprite = ressourceLoader.getTexture(antiSprite)
 
 game.build().addEntity(player).addEntity(enemy).run()
