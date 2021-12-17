@@ -1,14 +1,16 @@
-export let ressourceLoader = {}
-
-let textures = []
+let ressourceLoader = {
+    textures: [],
+}
 
 ressourceLoader.addTexture = function (url) {
     let img = new Image()
     img.src = url
-    textures.push(img)
-    return textures.length - 1
+    ressourceLoader.textures.push(img)
+    return ressourceLoader.textures.length - 1
 }
 
 ressourceLoader.getTexture = function (index) {
-    return textures[index]
+    return ressourceLoader.textures[index]
 }
+
+export default ressourceLoader
